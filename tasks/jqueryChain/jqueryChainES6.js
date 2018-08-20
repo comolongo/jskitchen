@@ -1,6 +1,6 @@
-// Implement jquery chain using ES5 synt
+// Implement jquery chain using ES6
 // $(selector).click(alert(123)).html('test').css('border:1px solid red;color:red;')
-// Use let/const, arrow function, Promise
+// Use let/const, arrow function, ...
 
 
 function $(selector){
@@ -45,6 +45,6 @@ function $(selector){
     }
   };
 
-  // Return new instance of jquery object.
+  // Return new instance of jquery class.
   return new jQuery();
 }
