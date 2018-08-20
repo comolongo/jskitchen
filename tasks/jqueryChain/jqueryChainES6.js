@@ -3,13 +3,13 @@
 // Use let/const, arrow function, ...
 
 class jQuery {
-  constructor() {
+  constructor(selector) {
     this.selectAll = document.querySelectorAll(selector);
   }
 
   each(fn) {
     this.get().forEach(element => {
-      fn(element);
+      fn(element);  
     });
   }
 
@@ -44,5 +44,5 @@ class jQuery {
 
 function $(selector){
   // Return new instance of jquery class.
-  return new jQuery();
+  return new jQuery(selector);
 }
