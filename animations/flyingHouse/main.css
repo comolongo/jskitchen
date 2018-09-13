@@ -1,0 +1,39 @@
+.container {
+  border: 1px solid red;
+  height: 600px;
+  width: 400px;
+}
+
+/*==== Implementation based on transition property ====*/
+/* .campbell {
+  width: 100px;
+  transition: width 3s cubic-bezier(0, 0, .5, 2);
+}
+
+.campbell.active {
+  width: 400px;
+} */
+
+
+/*==== Implementation based on animation property ====*/
+
+.campbell {
+  width: 100px;
+}
+
+.campbell.active {
+  animation-name: resize;
+  animation-duration: 3s;
+}
+
+@keyframes resize {
+  from {
+    width: 100px;
+  }
+  80% {
+    width: 500px;
+  }
+  to {
+    width: 400px;
+  }
+}

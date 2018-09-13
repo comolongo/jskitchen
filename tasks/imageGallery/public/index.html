@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Image Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {        
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+    }
+    li {
+      border: 2px solid lightskyblue;
+      margin: 10px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    li img {
+      width: 100%;
+      height: auto;
+    }
+    .details {
+      font-size: 2em;
+      position: absolute;
+      display: block;
+      width: 200vw;
+      left: -100vw;
+      background-size: 100%;
+      transition: left .2s ; 
+    }
+
+    .content {
+      background-color: #fff;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      opacity: 0.8;
+    }
+
+    .details.active {
+      left: 0;
+    }
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    // var config = {
+    //   apiKey: "AIzaSyCuV9u1-SwUg4hnSYYlSxfh4MlgE5j5TB4",
+    //   authDomain: "jskitchen-image-gallery.firebaseapp.com",
+    //   databaseURL: "https://jskitchen-image-gallery.firebaseio.com",
+    //   projectId: "jskitchen-image-gallery",
+    //   storageBucket: "",
+    //   messagingSenderId: "994167900903"
+    // };
+    // firebase.initializeApp(config);
+  </script>
+</head>
+<body>
+  <section>
+    <ul onclick="showDetails(event)">
+      <li>
+        <div class="details">
+          <div class="content">Details: Some info</div>
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+      </li>
+      <li>
+        <div>
+            <img src="https://images.pexels.com/photos/2071/broken-car-vehicle-vintage.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+      </li>
+      <li>
+        <div>
+            <img src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="https://images.pexels.com/photos/249343/pexels-photo-249343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div>        
+      </li>
+      <li>
+        <div>
+          <img src="https://images.pexels.com/photos/249343/pexels-photo-249343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        </div> 
+      </li>
+    </ul>
+  </section>
+
+  <script>
+    function showDetails(e){
+      console.log(e.target);
+      var details = document.querySelector('.details');
+      e.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

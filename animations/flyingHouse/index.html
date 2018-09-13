@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title></title>
+</head>
+<body>
+  <div class="container">
+    <img class="campbell" onclick="makeBigger()" src="https://www.ci.campbell.ca.us/ImageRepository/Path?filePath=%2F00000000-0000-0000-0000-000000000000%5C16%2FCampbell_Heritage_Theater.png">
+  </div>
+
+
+
+<script src="animation.js"></script>
+<script>
+  function makeBigger (){
+    document.querySelector(".campbell").classList.add("active");
+  }
+  
+  document.querySelector(".campbell").addEventListener('transitionend', function() {
+    alert(111);
+  });
+
+</script>
+</body>
+</html>

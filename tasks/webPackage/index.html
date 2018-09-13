@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+
+<script src="data.js"></script>
+<script>
+  let cssFiles = [];
+  getCssFile('responsive.css');
+  
+
+  function getCssFile(fileName){
+    let arr = data[fileName];
+    let re = /(.)*\.css/;
+    if (!arr) return;
+    arr.forEach(element => {
+
+      if (re.test(element)) {
+        getCssFile(element);
+        cssFiles.push(element);
+        console.log(element); 
+      }
+      
+    });
+  }
+
+</script>
+</body>
+</html>
