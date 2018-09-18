@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>webPackage</title>
 </head>
 <body>
-
-
 <script src="data.js"></script>
 <script>
-  let cssFiles = [];
-  getCssFile('responsive.css');
+  let files = [];
+  getDependencies('main.html');
   
-
-  function getCssFile(fileName){
+  function getDependencies(fileName){
     let arr = data[fileName];
-    let re = /(.)*\.css/;
+    let re = /.*\.css/;
     if (!arr) return;
-    arr.forEach(element => {
-
-      if (re.test(element)) {
-        getCssFile(element);
-        cssFiles.push(element);
-        console.log(element); 
+    arr.forEach(el => {
+      if (re.test(el)) {
+        files.push(el);
+        getDependencies(el);
       }
-      
     });
   }
-
+  console.log(files);
 </script>
 </body>
 </html>
