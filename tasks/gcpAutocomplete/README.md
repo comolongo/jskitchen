@@ -19,3 +19,5 @@ https://jskitchen-autocomplete.firebaseapp.com/
 - Rewrite using OOP to support multiple instances in one page
 - Cache results to decrease number of requests when user typing
 - Implement keyboard navigation through the list of suggested items
+- Hide autocomplete on outside click
+- Show preloaded for each request to the BE

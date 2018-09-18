@@ -1,21 +1,25 @@
-body, ul {
+body, ul, p {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 header {
-  background: #0069c0;
+  background: #1a73e8;
   display: flex;
   height: 48px;
   padding: 0 12px;
-  /* align-items: center; */
+}
+
+.logo {
+  width: 220px;
+  height: 24px;
+  align-self: center;
 }
 
 .autocomplete {
-  /* align-self: center; */
   position: relative;
-  margin-top: 5px;
+  margin: 5px 0 0 20px;
 }
 
 .autocomplete-list {
@@ -32,12 +36,17 @@ header {
   font-size: 13px;
 }
 
+.category {
+  font-size: 11px;
+  padding-top: 2px; 
+}
+
 .autocomplete-list li:hover {
   background: #6ec6ff;
 }
 
 .autocomplete-input {
-  background: #2196f3;
+  background: #3684eb;
   font-size: 15px;
   height: 36px;
   border-radius: 2px;

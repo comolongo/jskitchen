@@ -21,7 +21,7 @@ let autocomplete = function(inputSelector, listSelector) {
     if (inputValue) {
       ref.orderByChild('title')
       .startAt(inputValue)
-      .endAt(inputValue + '\uf8ff')
+      .endAt(`${inputValue}\uf8ff`)
       .once('value')
       .then(function (snapshot) {
         snapshot.forEach((childSnapshot) => {
@@ -38,10 +38,10 @@ let autocomplete = function(inputSelector, listSelector) {
   }
 
   function appendElem(elem) {
-      let li = document.createElement('li');
-      li.innerText = elem.title;
-      li.addEventListener('click', event => setValue(event));
-      LIST.appendChild(li);
+    let li = document.createElement('li');
+    li.innerHTML = elem.title + `<p class="category">${elem.section}</p>`;
+    li.addEventListener('click', event => setValue(event));
+    LIST.appendChild(li);
   }
   
   function clearAutocomplete() {
