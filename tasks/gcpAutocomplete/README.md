@@ -6,8 +6,9 @@ Create an autocomplete library to be used for the product search. When users inp
 - What data structure would work best for autocomplete?
 
 ## Demo:
+GCP products search. Try App Engine/Storage/Cloud functions/etc.
 https://jskitchen-autocomplete.firebaseapp.com/
-GCp products search, try App Engine/Storage/Cloud functions/etc.
+
 
 ### What was done:
 - BE implemented using Firebase with Realtime Database (https://jskitchen-autocomplete.firebaseio.com/)
