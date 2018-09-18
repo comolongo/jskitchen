@@ -32,7 +32,7 @@ header {
   font-size: 13px;
 }
 
-.autocomplete-suggest li:hover {
+.autocomplete-list li:hover {
   background: #6ec6ff;
 }
 
@@ -46,6 +46,7 @@ header {
   color: #707070;
   width: 200px;
 }
+
 input[type=text]:focus, input[type=text]:active {
   background: #fff;
 }

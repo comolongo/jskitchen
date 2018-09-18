@@ -1,4 +1,5 @@
-#Autocomplete
+# Autocomplete
+
 Task:
 Create an autocomplete library to be used for the product search. When users input a product name, a result of the matching products should be returned.
 - What is your overall approach to the library? (I.e. what is on the FE and what is on the BE)

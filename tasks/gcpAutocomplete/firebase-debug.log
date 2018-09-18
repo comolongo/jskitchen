@@ -1,56 +1,24 @@
-[debug] [2018-09-13T07:46:30.800Z] ----------------------------------------------------------------------
-[debug] [2018-09-13T07:46:30.803Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-09-13T07:46:30.803Z] CLI Version:   4.2.1
-[debug] [2018-09-13T07:46:30.803Z] Platform:      darwin
-[debug] [2018-09-13T07:46:30.803Z] Node Version:  v8.11.4
-[debug] [2018-09-13T07:46:30.804Z] Time:          Thu Sep 13 2018 00:46:30 GMT-0700 (PDT)
-[debug] [2018-09-13T07:46:30.804Z] ----------------------------------------------------------------------
+[debug] [2018-09-18T08:23:10.997Z] ----------------------------------------------------------------------
+[debug] [2018-09-18T08:23:11.000Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-09-18T08:23:11.000Z] CLI Version:   4.2.1
+[debug] [2018-09-18T08:23:11.000Z] Platform:      darwin
+[debug] [2018-09-18T08:23:11.000Z] Node Version:  v8.11.4
+[debug] [2018-09-18T08:23:11.001Z] Time:          Tue Sep 18 2018 01:23:11 GMT-0700 (PDT)
+[debug] [2018-09-18T08:23:11.001Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-09-13T07:46:30.817Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-09-13T07:46:30.817Z] > authorizing via signed-in user
-[debug] [2018-09-13T07:46:30.819Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-09-13T07:46:30.819Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
-
-[debug] [2018-09-13T07:46:31.037Z] <<< HTTP RESPONSE 200
-[debug] [2018-09-13T07:46:31.056Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/jskitchen-autocomplete  
+[debug] [2018-09-18T08:23:11.014Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-18T08:23:11.014Z] > authorizing via signed-in user
+[debug] [2018-09-18T08:23:11.016Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/jskitchen-autocomplete  
  
-[debug] [2018-09-13T07:46:31.462Z] <<< HTTP RESPONSE 200
-[debug] [2018-09-13T07:46:31.464Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jskitchen-autocomplete  
+[debug] [2018-09-18T08:23:11.379Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-18T08:23:11.380Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jskitchen-autocomplete  
  
-[debug] [2018-09-13T07:46:31.752Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-18T08:23:11.689Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/Lutskiy/Work/jskitchen/jskitchen/tasks/gcpAutocomplete'...
 [info] 
-[debug] [2018-09-13T07:46:31.755Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/729714723362/clients/_:getWebAppConfig  
+[debug] [2018-09-18T08:23:11.692Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/729714723362/clients/_:getWebAppConfig  
  
-[debug] [2018-09-13T07:46:32.113Z] <<< HTTP RESPONSE 200
-[info] i  hosting[jskitchen-autocomplete]: Serving hosting files from: public
-[info] ✔  hosting[jskitchen-autocomplete]: Local server: http://localhost:5000
-[debug] [2018-09-14T18:54:14.517Z] ----------------------------------------------------------------------
-[debug] [2018-09-14T18:54:14.520Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-09-14T18:54:14.521Z] CLI Version:   4.2.1
-[debug] [2018-09-14T18:54:14.521Z] Platform:      darwin
-[debug] [2018-09-14T18:54:14.521Z] Node Version:  v8.11.4
-[debug] [2018-09-14T18:54:14.523Z] Time:          Fri Sep 14 2018 11:54:14 GMT-0700 (PDT)
-[debug] [2018-09-14T18:54:14.524Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2018-09-14T18:54:14.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-09-14T18:54:14.545Z] > authorizing via signed-in user
-[debug] [2018-09-14T18:54:14.547Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-09-14T18:54:14.547Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
-
-[debug] [2018-09-14T18:54:14.719Z] <<< HTTP RESPONSE 200
-[debug] [2018-09-14T18:54:14.740Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/jskitchen-autocomplete  
- 
-[debug] [2018-09-14T18:54:15.048Z] <<< HTTP RESPONSE 200
-[debug] [2018-09-14T18:54:15.050Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jskitchen-autocomplete  
- 
-[debug] [2018-09-14T18:54:15.314Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/Lutskiy/Work/jskitchen/jskitchen/tasks/gcpAutocomplete'...
-[info] 
-[debug] [2018-09-14T18:54:15.318Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/729714723362/clients/_:getWebAppConfig  
- 
-[debug] [2018-09-14T18:54:15.578Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-18T08:23:11.984Z] <<< HTTP RESPONSE 200
 [info] i  hosting[jskitchen-autocomplete]: Serving hosting files from: public
 [info] ✔  hosting[jskitchen-autocomplete]: Local server: http://localhost:5000
