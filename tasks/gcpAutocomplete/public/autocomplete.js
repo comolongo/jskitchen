@@ -7,7 +7,7 @@ let autocomplete = function(inputSelector, listSelector) {
   function init() {
     INPUT.addEventListener('input', () => {
       if (timeout) clearTimeout(timeout);
-      timeout = setTimeout((event) => {
+      timeout = setTimeout(() => {
         getData();
       }, DELAY);
     });
