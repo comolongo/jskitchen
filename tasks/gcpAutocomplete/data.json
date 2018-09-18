@@ -1,0 +1,62 @@
+{
+  "1": {
+    "title": "App Engine",
+    "description": "",
+    "section": "Compute"
+  },
+  "2": {
+    "title": "Compute Engine",
+    "description": "",
+    "section": "Compute"
+  },
+  "3": {
+    "title": "Kubernetes Engine",
+    "description": "",
+    "section": "Compute"
+  },
+  "4": {
+    "title": "Cloud Functions",
+    "description": "",
+    "section": "Compute"
+  },
+  "5": {
+    "title": "Bigtable",
+    "description": "",
+    "section": "Storage"
+  },
+  "6": {
+    "title": "Datastore",
+    "description": "",
+    "section": "Storage"
+  },
+  "7": {
+    "title": "Firestore",
+    "description": "",
+    "section": "Storage"
+  },
+  "8": {
+    "title": "Storage",
+    "description": "",
+    "section": "Storage"
+  },
+  "9": {
+    "title": "SQL",
+    "description": "",
+    "section": "Storage"
+  },
+  "10": {
+    "title": "Spanner",
+    "description": "",
+    "section": "Storage"
+  },
+  "11": {
+    "title": "Memorystore",
+    "description": "",
+    "section": "Storage"
+  },
+  "12": {
+    "title": "Filestore",
+    "description": "",
+    "section": "Storage"
+  }
+}
